@@ -20,6 +20,15 @@ document.addEventListener('DOMContentLoaded', function() {
         correctLevel: QRCode.CorrectLevel.H
     });
 
+    new QRCode(document.getElementById('qrcode-red'), {
+        text: qrCodeURL,
+        width: 200,
+        height: 200,
+        colorDark: '#CE2029',
+        colorLight: '#ffffff',
+        correctLevel: QRCode.CorrectLevel.H
+    });
+
     // Log event info to console
     console.log('Event Details:', eventData);
     console.log('QR Code URL:', qrCodeURL);
