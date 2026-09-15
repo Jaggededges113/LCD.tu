@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
     };
 
     // Generate QR code
-    const qrCodeURL = 'https://jaggededges113.github.io/LCD.tu/';
+    const qrCodeURL = 'https://chat.whatsapp.com/JFwMpd0lB49DRaCE4rDM7C';
     new QRCode(document.getElementById('qrcode'), {
         text: qrCodeURL,
         width: 200,
