@@ -2,6 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: white;
+    text-shadow: 
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000,
+        -2px 0 0 #000,
+        2px 0 0 #000,
+        0 -2px 0 #000,
+        0 2px 0 #000;
 }
 
 body {
@@ -28,7 +38,6 @@ header {
 header h1 {
     font-size: 2.5em;
     margin-bottom: 10px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 header .tagline {
@@ -90,12 +99,12 @@ main {
 
 .detail-item h3 {
     font-size: 1.1em;
-    color: #333;
+    color: white;
     margin-bottom: 5px;
 }
 
 .detail-item p {
-    color: #666;
+    color: white;
     font-size: 0.95em;
     line-height: 1.5;
 }
@@ -106,13 +115,13 @@ main {
 }
 
 .event-description h3 {
-    color: #333;
+    color: white;
     margin: 20px 0 10px 0;
     font-size: 1.2em;
 }
 
 .event-description p {
-    color: #666;
+    color: white;
     line-height: 1.6;
     font-size: 0.95em;
 }
@@ -133,10 +142,12 @@ main {
     cursor: pointer;
     transition: all 0.3s ease;
     font-weight: 600;
+    background: #0077BE;
+    color: white;
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: #0077BE;
     color: white;
 }
 
@@ -146,15 +157,38 @@ main {
 }
 
 .btn-secondary {
-    background: #f0f0f0;
-    color: #333;
-    border: 2px solid #ddd;
+    background: #0077BE;
+    color: white;
+    border: 2px solid #0077BE;
 }
 
 .btn-secondary:hover {
-    background: #f9f9f9;
-    border-color: #667eea;
-    color: #667eea;
+    background: #005f99;
+    border-color: #005f99;
+    color: white;
+}
+
+.qr-code-section {
+    padding: 30px;
+    text-align: center;
+    border-top: 1px solid #eee;
+}
+
+.qr-code-section h3 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+#qrcode {
+    display: inline-block;
+    padding: 15px;
+    background: white;
+    border-radius: 8px;
+}
+
+#qrcode img {
+    display: block;
 }
 
 footer {
