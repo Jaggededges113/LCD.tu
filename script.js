@@ -9,27 +9,24 @@ document.addEventListener('DOMContentLoaded', function() {
         description: 'Join industry leaders and innovators for a day of inspiring talks, hands-on workshops, and networking opportunities. Learn about the latest trends and technologies shaping the future.'
     };
 
-    // Generate QR code
-    const qrCodeURL = 'https://chat.whatsapp.com/JFwMpd0lB49DRaCE4rDM7C';
-    new QRCode(document.getElementById('qrcode'), {
-        text: qrCodeURL,
-        width: 200,
-        height: 200,
-        colorDark: '#000000',
+    new QRCode(document.getElementById('qrcode-sunset'), {
+        text: 'https://jaggededges113.github.io/LCD.tu/',
+        width: 150,
+        height: 150,
+        colorDark: '#FF4500',
         colorLight: '#ffffff',
         correctLevel: QRCode.CorrectLevel.H
     });
 
-    new QRCode(document.getElementById('qrcode-red'), {
-        text: qrCodeURL,
-        width: 200,
-        height: 200,
-        colorDark: '#CE2029',
+    new QRCode(document.getElementById('qrcode-deep-sea'), {
+        text: 'https://chat.whatsapp.com/JFwMpd0lB49DRaCE4rDM7C',
+        width: 150,
+        height: 150,
+        colorDark: '#006994',
         colorLight: '#ffffff',
         correctLevel: QRCode.CorrectLevel.H
     });
 
     // Log event info to console
     console.log('Event Details:', eventData);
-    console.log('QR Code URL:', qrCodeURL);
 });

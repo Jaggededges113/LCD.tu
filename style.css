@@ -180,16 +180,29 @@ main {
     font-size: 1.6em;
 }
 
-#qrcode,
-#qrcode-red {
+.qr-code-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.qr-code-item h4 {
+    color: white;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+#qrcode-sunset,
+#qrcode-deep-sea {
     display: inline-block;
-    padding: 15px;
+    padding: 10px;
     background: white;
     border-radius: 8px;
 }
 
-#qrcode img,
-#qrcode-red img {
+#qrcode-sunset img,
+#qrcode-deep-sea img {
     display: block;
 }
 
